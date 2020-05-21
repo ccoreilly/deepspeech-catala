@@ -6,13 +6,6 @@ def validate_label(label):
 
     label = label.lower()
     label = label.strip()
-    label = label.replace("à", "a")
-    label = label.replace("è", "e")
-    label = label.replace("é", "e")
-    label = label.replace("í", "i")
-    label = label.replace("ò", "o")
-    label = label.replace("ó", "o")
-    label = label.replace("ú", "u")
     label = label.replace("_", " ")
     label = label.replace("@", " ")
     label = re.sub("[ ]{2,}", " ", label)
